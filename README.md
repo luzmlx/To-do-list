@@ -29,7 +29,7 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
             "id": "rec5IsjtYoiCvfkzN",
             "fields": {
                 "To-Do": "Cook",
-                "completed": true,
+                
                 "comments": "Lasagna vs. Homemade Pizza",
                 "date": "2021-06-13"
             },
@@ -39,7 +39,7 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
             "id": "recmuq1rnhhpPM9Z9",
             "fields": {
                 "To-Do": "Homework",
-                "completed": true,
+                
                 "date": "2021-07-14",
                 "comments": "Algebra hw"
             },
