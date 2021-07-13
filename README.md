@@ -74,7 +74,6 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -90,9 +89,19 @@ This schedule will be used to keep track of your progress throughout the week an
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Proposal | H | 3hrs|  |  |
+| HTML code | H | 2hrs|  |  |
+| PseudoCode | H | 2hrs|  |  |
+| Component CSS Styling | H | 3hrs|  |  |
+| Media Query | H | 4hrs|  |  |
+| Airtable Data | H | 3hrs|  |  |
+| Create Task Form | H | 3hrs|  |  |
+| Delete Data | H | 2hrs|  |  |
+| Functional Button to add Task | H | 3hrs|  |  |
+| POST MVP: Functional Dark Mode Button | L | 1hr|  |  |
+| POST MVP: Darkmode CSS Styling | L | 3hrs|  |  |
+
+| Total | H | 29hrs| |  |
 
 ## SWOT Analysis
 
