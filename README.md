@@ -70,7 +70,7 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 #### PostMVP  
 - Button for dark mode
-- Add a dark mode
+- Add a dark mode css style
 
 ## Project Schedule
 
