@@ -15,7 +15,7 @@ Web: https://wireframe.cc/XqcJyd
 
 ## Component Hierarchy
 
-![image](https://user-images.githubusercontent.com/85104906/125473500-96d77fca-b664-47f5-8310-8bb0a72a1ef3.png)
+![image](https://user-images.githubusercontent.com/85104906/125513233-5e1add70-b6fc-4d2f-b5f2-699f3fb79b44.png)
 
 
 ## API and Data Sample
@@ -64,8 +64,10 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 #### MVP 
 
-- Get and post Tasks from Airtable.
-- Use forms to create tasks and update Airtable.
+- Post tasks to to-do list
+- Get all tasks
+- CSS Styling (grid)
+- Media Query for mobile design
 - Delete Completed tasks from the web and airtable.
 
 #### PostMVP  
@@ -83,7 +85,7 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 |July 14| Pseudocode / actual code | Incomplete
 |July 15| Initial Clickable Model  | Incomplete
 |July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|July 20| Presentations | Incomplete
 
 ## Timeframes
 
@@ -106,9 +108,13 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 ## SWOT Analysis
 
 ### Strengths:
+I believe my strengths will be in completing the forms and creating a responsive design. 
 
 ### Weaknesses:
+I'm not the best with React JS code so I will definitely have to revisit past lessons to get a more clear understanding of what to do. 
 
 ### Opportunities:
+I'm excited to create an aesthetic website by implementing css styling. I also have the helpful resources available if I ever need help. 
 
 ### Threats:
+Life is unknown and hopefully this next week nothing happens to put me behind on my work. I also have to remind myself constantly to take advantage of the resources available.
