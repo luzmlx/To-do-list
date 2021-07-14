@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Footer from './components/Footer'
+import NavBar from './components/NavBar'
 
 function App() {
+
+// Write code to display forms 
+  // Components: Add New Task
+      // Delete
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* header */}
+      <NavBar />
+      {/* forms */}
+      {/* footer */}
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
+//  https://api.airtable.com/v0/${base/Table%201
