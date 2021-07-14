@@ -1,7 +1,9 @@
-
+import {Route } from 'react-router-dom'
 import './App.css';
 import Footer from './components/Footer'
 import NavBar from './components/NavBar'
+import TaskData from './components/TaskData'
+import Header from './components/Header'
 
 function App() {
 
@@ -12,8 +14,13 @@ function App() {
   return (
     <div className="App">
       {/* header */}
+      <Header />
+      {/* navbar */}
       <NavBar />
+      <Route path='/'></Route>
+      <Route path='/tasks'></Route>
       {/* forms */}
+      <TaskData />
       {/* footer */}
       <Footer />
     </div>
