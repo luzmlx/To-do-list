@@ -19,6 +19,8 @@ function App() {
       <NavBar />
       <Route path='/'></Route>
       <Route path='/tasks'></Route>
+      <Route path="./todos/:id">
+      </Route>
       {/* forms */}
       <TaskData />
       {/* footer */}
