@@ -1,9 +1,9 @@
-import {Route } from 'react-router-dom'
-import './App.css';
-import Footer from './components/Footer'
-import NavBar from './components/NavBar'
-import TaskData from './components/TaskData'
-import Header from './components/Header'
+import React from 'react'
+import './App.css'
+import Todoform from './components/Todoform'
+
+import {Link} from 'react-router-dom'
+import TasksPage from './components/TasksPage'
 
 function App() {
 
@@ -13,22 +13,23 @@ function App() {
 
   return (
     <div className="App">
-      {/* header */}
-      <Header />
-      {/* navbar */}
-      <NavBar />
-      <Route path='/'></Route>
-      <Route path='/tasks'></Route>
-      <Route path="./todos/:id">
-      </Route>
-      {/* forms */}
-      <TaskData />
-      {/* footer */}
-      <Footer />
+      
+      {/* <Link>Home</Link><br /> */}
+      {/* <Link to='/Todoform'>Tasks</Link> */}
+      {/* < Route path='/todoform'> */}
+      <Link to="/TasksPage"><button>Tasks</button></Link>
+      {/* <TaskPage /> */}
+      
+      <h3 classname="description">
+        Do you have trouble remembering all the things you have to do?
+        If so, click that tasks button to get started on your to-do list!
+
+        <br /> Hope you enjoy this free to-do website.
+      </h3>
     </div>
   );
 }
 
 export default App;
 
-//  https://api.airtable.com/v0/${base/Table%201
+//  https://api.airtable.com/v0/${base/todos
