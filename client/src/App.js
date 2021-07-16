@@ -1,27 +1,32 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './App.css'
-// import Todoform from './components/Todoform'
-
-import {Link} from 'react-router-dom'
+import axios from 'axios'
 import TasksPage from './components/TasksPage'
 
+const base = new Airtable({ apikey: 'keyYp6q4MpjG7wbaf' }).base('appNknbhvju5qbbaq')
 
 function App() {
 
 // Write code to display forms 
   // Components: Add New Task
       // Delete
+  
+  useEffect(() => {
+    base("todos")
+      .select({ view: 'Grid view' })
+      .eachTask((records, fetchTask) => {
+        console.log(records);
+        fetchTask()
+    })
+  }, [])
+
 
   return (
     <div className="App">
+
       
-      {/* <Link>Home</Link><br /> */}
-      {/* <Link to='/Todoform'>Tasks</Link> */}
-      {/* < Route path='/todoform'> */}
-      <Link to="/components/TasksPage"><button path="/TasksPage">Tasks</button>
-      </Link>
       <TasksPage />
-   
+
         
       
       <h3 className="description">

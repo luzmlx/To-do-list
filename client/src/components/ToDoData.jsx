@@ -18,16 +18,18 @@ function ToDoData({todos, completeTodo, removeTodo, updateTodo}) {
     })
   }
   if (edit.id) {
-    return <Todoform edit={edit} onSubmit={submitUpdate}></Todoform>
+    return <Todoform edit={edit} onSubmit={submitUpdate} />
   }
 
   return todos.map((task, index) =>(
-    <div className={task.isComplete ? 'todo complete' : 'to-do-row'}
+    <div
+      className={task.isComplete ? 'todo-row complete' : 'to-do-row'}
       key={index}>
       
       <div key={task.id} onClick={() => completeTodo(task.id)}>
         {task.text}
       </div>
+
       <div className='icons'>
         <RiCloseCircleLine
           onClick={() => removeTodo(task.id)}
