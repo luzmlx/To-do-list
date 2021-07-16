@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-export default function Todoform() {
+export default function Todoform(props) {
   const [input, setInput] = useState('')
 
   const handleChange = e => {
@@ -10,12 +10,17 @@ export default function Todoform() {
   const handleSubmit = event => {
     event.preventDefault();
 
+    props.onSubmit({
+      id: Math.floor(Math.random() * 10000),
+      text: input
+})
     
     
     setInput('')
   }
 
   return (
+    
     <form className='todoform'
       onSubmit={handleSubmit}>
       
@@ -24,6 +29,15 @@ export default function Todoform() {
         onChange={handleChange}/>
       
       <button className='todobutton'> Add To-Do</button>
-      </form>
+      <div>
+        <h2>
+        
+        </h2>
+      </div>
+    </form>
+    
+
+
+
   )
 }

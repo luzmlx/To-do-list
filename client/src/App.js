@@ -1,9 +1,10 @@
 import React from 'react'
 import './App.css'
-import Todoform from './components/Todoform'
+// import Todoform from './components/Todoform'
 
 import {Link} from 'react-router-dom'
 import TasksPage from './components/TasksPage'
+
 
 function App() {
 
@@ -17,10 +18,13 @@ function App() {
       {/* <Link>Home</Link><br /> */}
       {/* <Link to='/Todoform'>Tasks</Link> */}
       {/* < Route path='/todoform'> */}
-      <Link to="/TasksPage"><button>Tasks</button></Link>
-      {/* <TaskPage /> */}
+      <Link to="/components/TasksPage"><button path="/TasksPage">Tasks</button>
+      </Link>
+      <TasksPage />
+   
+        
       
-      <h3 classname="description">
+      <h3 className="description">
         Do you have trouble remembering all the things you have to do?
         If so, click that tasks button to get started on your to-do list!
 
