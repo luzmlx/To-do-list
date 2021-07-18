@@ -1,48 +1,60 @@
-import React, {useState,  } from 'react'
+import React, {useState, useEffect } from 'react'
 import Todoform from './Todoform'
-// import axios from 'axios'
+import axios from 'axios'
 import ToDoData from './ToDoData'
 
 
-// const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE
-// const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
-// const BASE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/todos`
+const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE
+const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
+const BASE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/todos`
 
 
 function TasksPage() {
   const [todos, setTodos] = useState([])
 
-  // useEffect(() => {
-  //   const fetchTasks = async () => {
-  //     const res = await axios.get(BASE_URL, { headers: { Authorization: `Bearer ${AIRTABLE_KEY}` } })
-  //     //  console.log(res.data.records)
-  //     setTodos(res.data.records)
-  //   }
-  //   fetchTasks()
-  // })
+  useEffect(() => {
+    
+    fetchTasks()
+  }, [])
 
-  const addTodo = todo => {
-    if (!todo.text || /^\s*$/.test(todo.text)) {
-      return
-    }
-    const newTodos = [todo, ...todos];
+  const fetchTasks = async () => {
+    const res = await axios.get(BASE_URL, { headers: { Authorization: `Bearer ${AIRTABLE_KEY}` } })
+    //  console.log(res.data.records)
+    setTodos(res.data.records)
+  }
 
-    setTodos(newTodos);
+  const addTodo = async todo => {
+    // if (!todo.text || /^\s*$/.test(todo.text)) {
+    //   return
+    // }
+
+    let fields = todo
+
+    const res = await axios.post(BASE_URL, {fields}, { headers: { Authorization: `Bearer ${AIRTABLE_KEY}` } })
+    fetchTasks()
+    
+    // const newTodos = [res.data, ...todos];
+
+    // setTodos(newTodos);
     console.log(...todos)
     
   }
 
-  const updateTodo = (todoId, newVal) => {
-    if (!newVal.text || /^\s*$/.test(newVal.text)) {
-      return
-    }
-    setTodos(prev => prev.map(item => (item.id === todoId ? newVal : item)))
+  const updateTodo = async (id, newVal) => {
+    // 
+const fields = {comments: newVal.task}
+
+    const res = await axios.patch(`${BASE_URL}/${id}`, { fields }, { headers: { Authorization: `Bearer ${AIRTABLE_KEY}` } })
+    
+    fetchTasks()
+    // setTodos(prev => prev.map(item => (item.id === id ? newVal : item)))
     
   }
 
-    const removeTodo = id => {
+    const removeTodo = async id => {
       const removeArr = [...todos].filter(todo => todo.id !== id)
-
+      await axios.delete(`${BASE_URL}/${id}`, { headers: { Authorization: `Bearer ${AIRTABLE_KEY}` } })
+console.log(id)
       setTodos(removeArr)
     }
 

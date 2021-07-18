@@ -4,13 +4,14 @@ import { RiCloseCircleLine} from 'react-icons/ri'
 import { TiEdit }from 'react-icons/ti'
 
 function ToDoData({todos, completeTodo, removeTodo, updateTodo}) {
-
+console.log(todos)
   const [edit, setEdit] = useState({
     id: null,
     value: ''
   })
 
   const submitUpdate = value => {
+    console.log(value)
     updateTodo(edit.id, value)
     setEdit({
       id: null,
@@ -27,7 +28,7 @@ function ToDoData({todos, completeTodo, removeTodo, updateTodo}) {
       key={index}>
       
       <div key={task.id} onClick={() => completeTodo(task.id)}>
-        {task.text}
+        {task.fields.task}
       </div>
 
       <div className='icons'>
