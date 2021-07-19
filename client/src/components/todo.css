@@ -1,3 +1,110 @@
+
 body {
-background-color: beige;
+  background: linear-gradient(
+    90deg,
+    #c8a871,
+    #e3d399 100%
+  );
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: #8f5631;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: antiquewhite;
+  font-size: 25px;
+}
+b {
+  font-size: 27px
+}
+h3 {
+  margin: 32px 0;
+  color: antiquewhite;
+}
+.todoform {
+  margin-bottom: 32px;
+}
+
+.todoinput {
+padding: 14px 32px 14px 16px;
+border-radius: 4px 0 0 4px;
+border: 2px solid #5d0cff;
+outline: none;
+width: 320px;
+
+background: transparent;
+color: azure;
+}
+
+
+.icon {
+  color: aqua;
+}
+.delete {
+  color: #5d0cff;
+}
+/* .to-do-row edits the text style of the tasks inputted */
+.to-do-row {
+  /* border-style: solid; */
+  color: #e3d399;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .app {
+    display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 350px;
+  min-height: 525px;
+  background: #ba7345;
+  text-align: center;
+  margin: 120px auto;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  }
+
+  h1 {
+    margin: 32px 0;
+    color: antiquewhite;
+    font-size: 25px;
+  }
+
+  b {
+    font-size: 27px
+  }
+
+  h3 {
+    margin: 32px 0;
+    color: antiquewhite;
+  }
+
+  .todoinput {
+    width: 200px;
+    
+  }
+  .icons {
+    border-style: solid;
+  }
+  .icon {
+    color: aqua;
+    
+  }
+  .delete {
+    color: #5d0cff;
+  }
 }

@@ -70,14 +70,18 @@ console.log(id)
 
     return (
       <div>
-        <h1>Today's Agenda</h1>
+        <h1>Get To It</h1>
+        <h3 className="description"><b>Hey!</b> Stop being lazy, write down your todos and get to workin'!
+        
+        </h3>
         <Todoform onSubmit={addTodo} />
-        <ToDoData
+        <ToDoData 
           todos={todos}
           completeTodo={completeTodo}
           removeTodo={removeTodo}
           updateTodo={updateTodo}
         />
+        
       
       </div>
     )

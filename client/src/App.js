@@ -14,19 +14,12 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="app">
 
       
       <TasksPage />
 
-        
-      
-      <h3 className="description">
-        Do you have trouble remembering all the things you have to do?
-        
-
-        <br /> Hope you enjoy this free to-do website.
-      </h3>
+  
     </div>
   );
 }
