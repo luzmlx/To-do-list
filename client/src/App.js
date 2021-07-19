@@ -1,7 +1,9 @@
 import React from 'react'
-import './components/todo.css'
+import './components/Todo.css'
 
 import TasksPage from './components/TasksPage'
+
+import Footer from './components/Footer'
 
 
 
@@ -19,7 +21,7 @@ function App() {
       
       <TasksPage />
 
-  
+  <Footer />
     </div>
   );
 }

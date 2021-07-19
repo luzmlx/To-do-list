@@ -2,9 +2,21 @@
 body {
   background: linear-gradient(
     90deg,
-    #c8a871,
-    #e3d399 100%
+    #ffafbd,
+    #e7d4e7 100%
   );
+}
+.footer {
+  background: #8f5631;
+  /* border-color: ; */
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 800px;
+border-radius: 10px;
+  
 }
 .app {
   display: flex;
@@ -42,8 +54,6 @@ border: 2px solid #5d0cff;
 outline: none;
 width: 320px;
 
-background: transparent;
-color: azure;
 }
 
 
@@ -56,7 +66,11 @@ color: azure;
 /* .to-do-row edits the text style of the tasks inputted */
 .to-do-row {
   /* border-style: solid; */
-  color: #e3d399;
+  border-color: #ec9191;
+  display: flex;
+  justify-content: space-between;
+    width: 100%
+
 }
 
 
@@ -66,16 +80,27 @@ color: azure;
 @media only screen and (max-width: 600px) {
 
   .app {
-    display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: start;
   width: 350px;
   min-height: 525px;
-  background: #ba7345;
+  background: #c06a99;
   text-align: center;
   margin: 120px auto;
   border-radius: 10px;
   padding-bottom: 30px;
+  }
+  .footer {
+  background: #c06a99;
+  
+      /* border-color: ; */
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 375px;
   }
 
   h1 {
@@ -92,18 +117,51 @@ color: azure;
     margin: 32px 0;
     color: antiquewhite;
   }
+  .to-do-row {
+    /* border-style: solid; */
+    border-color: #ec9191;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 
+  
+  }
+.todobutton {
+  background-color: rgb(247, 201, 229);
+  border: none;
+  border-radius: 5px;
+  padding: 15.65px;
+  position: relative;
+left: 1px;
+}
   .todoinput {
     width: 200px;
-    
+    border-radius: 5px;
+
+    /* border: solid; */
+  }
+
+  .taskinput {
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(247, 174, 219);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
   }
   .icons {
-    border-style: solid;
+    /* border-style: solid; */
+    display: flex;
+    width: 60px;
+    font-size: 25px;
+    margin-top: 4.75px;
   }
-  .icon {
-    color: aqua;
-    
-  }
+  
   .delete {
     color: #5d0cff;
   }

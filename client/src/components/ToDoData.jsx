@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Todoform from './Todoform'
 import { RiCloseCircleLine} from 'react-icons/ri'
-import { TiEdit }from 'react-icons/ti'
+
 
 function ToDoData({todos, completeTodo, removeTodo, updateTodo}) {
 console.log(todos)
@@ -27,8 +27,10 @@ console.log(todos)
       className={task.isComplete ? 'todo-row complete' : 'to-do-row'}
       key={index}>
       
-      <div key={task.id} onClick={() => completeTodo(task.id)}>
-        {task.fields.task}
+      <div
+      className="taskinput"
+        key={task.id} onClick={() => completeTodo(task.id)}>
+        {task.fields.task} 
       </div>
 
       <div className='icons'>
@@ -36,10 +38,7 @@ console.log(todos)
           onClick={() => removeTodo(task.id)}
           className='delete'
             />
-        <TiEdit
-          onClick={() => setEdit({ id: task.id, value: task.text })}
-        className='icon'
-        />
+        
 
       </div>
     </div>
