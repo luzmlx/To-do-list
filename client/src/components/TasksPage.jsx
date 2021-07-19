@@ -2,6 +2,7 @@ import React, {useState, useEffect } from 'react'
 import Todoform from './Todoform'
 import axios from 'axios'
 import ToDoData from './ToDoData'
+import { RiContactsBookLine } from 'react-icons/ri'
 
 
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE
@@ -32,7 +33,7 @@ function TasksPage() {
 
     const res = await axios.post(BASE_URL, {fields}, { headers: { Authorization: `Bearer ${AIRTABLE_KEY}` } })
     fetchTasks()
-    
+    console.log(res)
     // const newTodos = [res.data, ...todos];
 
     // setTodos(newTodos);
@@ -45,7 +46,8 @@ function TasksPage() {
 const fields = {comments: newVal.task}
 
     const res = await axios.patch(`${BASE_URL}/${id}`, { fields }, { headers: { Authorization: `Bearer ${AIRTABLE_KEY}` } })
-    
+    console.log(res)
+
     fetchTasks()
     // setTodos(prev => prev.map(item => (item.id === id ? newVal : item)))
     
