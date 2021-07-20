@@ -8,7 +8,7 @@ body {
 }
 .footer {
   background: #8f5631;
-  /* border-color: ; */
+  
   display: flex;
   justify-content: center;
   position: fixed;
@@ -50,18 +50,20 @@ h3 {
 .todoinput {
 padding: 14px 32px 14px 16px;
 border-radius: 4px 0 0 4px;
-border: 2px solid #5d0cff;
+border: 2px solid #f08287;
 outline: none;
 width: 320px;
 
 }
 
-
-.icon {
-  color: aqua;
+.taskinput {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 .delete {
-  color: #5d0cff;
+  color: #721e64;
 }
 /* .to-do-row edits the text style of the tasks inputted */
 .to-do-row {
@@ -94,7 +96,7 @@ width: 320px;
   .footer {
   background: #c06a99;
   
-      /* border-color: ; */
+      color:rgb(85, 5, 25);
       display: flex;
       justify-content: center;
       position: fixed;
@@ -129,21 +131,22 @@ width: 320px;
   }
 .todobutton {
   background-color: rgb(247, 201, 229);
-  border: none;
+  border: 1px solid #f08287;
   border-radius: 5px;
   padding: 15.65px;
   position: relative;
 left: 1px;
+color: rgb(68, 5, 10);
 }
   .todoinput {
     width: 200px;
+  
     border-radius: 5px;
-
     /* border: solid; */
   }
 
   .taskinput {
-    border-style: solid;
+    border: 2px solid #f08287;
     border-radius: 5px;
     background-color: rgb(247, 174, 219);
     display: flex;
@@ -153,6 +156,8 @@ left: 1px;
     padding-bottom: 10px;
     margin-bottom: 10px;
     margin-right: 20px;
+    margin-left: 20px;
+    color: rgb(43, 3, 9);
   }
   .icons {
     /* border-style: solid; */
@@ -163,6 +168,6 @@ left: 1px;
   }
   
   .delete {
-    color: #5d0cff;
+    color: #700626;
   }
 }
