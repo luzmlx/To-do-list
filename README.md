@@ -96,7 +96,7 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 | POST MVP: Functional Dark Mode Button | L | 1hr|  |  |
 | POST MVP: Darkmode CSS Styling | L | 3hrs|  |  |
 
-| Total | H | 29hrs|  |  |
+| Total | H | 29hrs| hrs | hrs |
 
 ## SWOT Analysis
 
