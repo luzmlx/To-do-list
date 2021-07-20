@@ -20,38 +20,24 @@ function TasksPage() {
 
   const fetchTasks = async () => {
     const res = await axios.get(BASE_URL, { headers: { Authorization: `Bearer ${AIRTABLE_KEY}` } })
-    //  console.log(res.data.records)
+   
     setTodos(res.data.records)
   }
 
   const addTodo = async todo => {
-    // if (!todo.text || /^\s*$/.test(todo.text)) {
-    //   return
-    // }
+    
 
     let fields = todo
 
     const res = await axios.post(BASE_URL, {fields}, { headers: { Authorization: `Bearer ${AIRTABLE_KEY}` } })
     fetchTasks()
     console.log(res)
-    // const newTodos = [res.data, ...todos];
-
-    // setTodos(newTodos);
+   
     console.log(...todos)
     
   }
 
-  const updateTodo = async (id, newVal) => {
-    // 
-const fields = {comments: newVal.task}
 
-    const res = await axios.patch(`${BASE_URL}/${id}`, { fields }, { headers: { Authorization: `Bearer ${AIRTABLE_KEY}` } })
-    console.log(res)
-
-    fetchTasks()
-    // setTodos(prev => prev.map(item => (item.id === id ? newVal : item)))
-    
-  }
 
     const removeTodo = async id => {
       const removeArr = [...todos].filter(todo => todo.id !== id)
@@ -83,7 +69,7 @@ console.log(id)
           todos={todos}
           completeTodo={completeTodo}
           removeTodo={removeTodo}
-          updateTodo={updateTodo}
+          
         />
         
       
