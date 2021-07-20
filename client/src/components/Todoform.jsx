@@ -19,7 +19,7 @@ export default function Todoform(props) {
     event.preventDefault();
 
     props.onSubmit({
-      // id: Math.floor(Math.random() * 10000),
+      
       task: input
 })
     setInput('')

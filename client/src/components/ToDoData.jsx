@@ -1,26 +1,13 @@
-import React, { useState } from 'react'
-import Todoform from './Todoform'
+import React  from 'react'
+
 import { RiCloseCircleLine} from 'react-icons/ri'
 
 
-function ToDoData({todos, completeTodo, removeTodo, updateTodo}) {
+function ToDoData({todos, completeTodo, removeTodo}) {
 console.log(todos)
-  const [edit, setEdit] = useState({
-    id: null,
-    value: ''
-  })
+  
 
-  const submitUpdate = value => {
-    console.log(value)
-    updateTodo(edit.id, value)
-    setEdit({
-      id: null,
-      value: ''
-    })
-  }
-  if (edit.id) {
-    return <Todoform edit={edit} onSubmit={submitUpdate} />
-  }
+  
 
   return todos.map((task, index) =>(
     <div
