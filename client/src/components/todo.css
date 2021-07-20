@@ -35,7 +35,7 @@ border-radius: 10px;
 .app {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   width: 520px;
   min-height: 600px;
   background: #c06a99;
@@ -126,7 +126,7 @@ color: rgb(68, 5, 10);
   .app {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   width: 350px;
   min-height: 525px;
   background: #c06a99;
