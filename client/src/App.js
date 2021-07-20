@@ -11,9 +11,7 @@ import Footer from './components/Footer'
 
 function App() {
 
-// Write code to display forms 
-  // Components: Add New Task
-      // Delete
+
 
 
 
@@ -30,4 +28,4 @@ function App() {
 
 export default App;
 
-//  https://api.airtable.com/v0/${base/todos
+
