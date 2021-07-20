@@ -156,7 +156,7 @@ color: rgb(68, 5, 10);
       position: fixed;
       bottom: 0;
       left: 0;
-      width: 375px;
+      width: 100%;
   }
 
   h1 {
