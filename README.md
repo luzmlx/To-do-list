@@ -85,18 +85,17 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Proposal | H | 3hrs| 4hrs| 4hrs|
-| HTML code | H | 2hrs|  |  |
-| PseudoCode | H | 2hrs|  |  |
-| Component CSS Styling | H | 3hrs|  |  |
-| Media Query | H | 4hrs|  |  |
-| Airtable Data | H | 3hrs|  |  |
-| Create Task Form | H | 3hrs|  |  |
-| Delete Data | H | 2hrs|  |  |
-| Functional Button to add Task | H | 3hrs|  |  |
-| POST MVP: Functional Dark Mode Button | L | 1hr|  |  |
-| POST MVP: Darkmode CSS Styling | L | 3hrs|  |  |
-
-| Total | H | 29hrs| hrs | hrs |
+| HTML code | H | 2hrs| 2hrs | 2hrs |
+| PseudoCode | H | 2hrs| 2hrs | 2hrs |
+| Component CSS Styling | H | 3hrs| 5hrs | 5hrs |
+| Media Query | H | 4hrs| 3hrs | 3hrs |
+| Airtable Data | H | 3hrs| 4hrs | 4hrs |
+| Create Task Form | H | 3hrs| 4.5hrs | 4.5hrs |
+| Delete Data | H | 2hrs| 2hrs | 2hrs |
+| Functional Button to add Task | H | 3hrs| 2hrs | 2hrs |
+~~| POST MVP: Functional Dark Mode Button | L | 1hr|  |  |~~
+~~| POST MVP: Darkmode CSS Styling | L | 3hrs|  |  |~~
+| Total | H | 29hrs| 28.5hrs | 28.5hrs |
 
 ## SWOT Analysis
 
