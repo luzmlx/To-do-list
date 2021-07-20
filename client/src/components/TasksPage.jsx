@@ -46,15 +46,7 @@ console.log(id)
       setTodos(removeArr)
     }
 
-    const completeTodo = id => {
-      let updatedTodo = todos.map(todo => {
-        if (todo.id === id) {
-          todo.isComplete = !todo.isComplete
-        }
-        return todo
-      })
-      setTodos(updatedTodo)
-    }
+  
   
   
 
@@ -67,7 +59,7 @@ console.log(id)
         <Todoform onSubmit={addTodo} />
         <ToDoData 
           todos={todos}
-          completeTodo={completeTodo}
+         
           removeTodo={removeTodo}
           
         />

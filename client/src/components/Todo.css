@@ -105,9 +105,9 @@ color: rgb(68, 5, 10);
   font-size: 29px;
   margin-top: 2px;
 }
-/* .to-do-row edits the text style of the tasks inputted */
+
 .to-do-row {
-  /* border-style: solid; */
+  
   border-color: #ec9191;
   display: flex;
   justify-content: space-between;
@@ -174,7 +174,7 @@ color: rgb(68, 5, 10);
     color: antiquewhite;
   }
   .to-do-row {
-    /* border-style: solid; */
+   
     border-color: #ec9191;
     display: flex;
     flex-direction: row;
@@ -196,7 +196,7 @@ color: rgb(68, 5, 10);
     width: 200px;
   
     border-radius: 5px;
-    /* border: solid; */
+   
   }
 
   .taskinput {
@@ -214,7 +214,7 @@ color: rgb(68, 5, 10);
     color: rgb(43, 3, 9);
   }
   .icons {
-    /* border-style: solid; */
+    
     display: flex;
     width: 60px;
     font-size: 25px;
