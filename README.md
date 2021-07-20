@@ -93,9 +93,9 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 | Create Task Form | H | 3hrs| 4.5hrs | 4.5hrs |
 | Delete Data | H | 2hrs| 2hrs | 2hrs |
 | Functional Button to add Task | H | 3hrs| 2hrs | 2hrs |
-| POST MVP: Functional Dark Mode Button | L | 1hr|  |  |
-~~| POST MVP: Darkmode CSS Styling | L | 3hrs|  |  |
-| Total | H | 29hrs| 28.5hrs | 28.5hrs |~~
+~~| POST MVP: Functional Dark Mode Button | L | 1hr|  |  |
+| POST MVP: Darkmode CSS Styling | L | 3hrs|  |  |~~
+| Total | H | 29hrs| 28.5hrs | 28.5hrs |
 
 ## SWOT Analysis
 
