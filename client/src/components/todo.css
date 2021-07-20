@@ -7,14 +7,15 @@ body {
   );
 }
 .footer {
-  background: #8f5631;
+  background: #c06a99;
+  
   
   display: flex;
   justify-content: center;
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 800px;
+  width: 100% ;
 border-radius: 10px;
   
 }
@@ -24,7 +25,7 @@ border-radius: 10px;
   justify-content: start;
   width: 520px;
   min-height: 600px;
-  background: #8f5631;
+  background: #c06a99;
   text-align: center;
   margin: 128px auto;
   border-radius: 10px;
@@ -56,14 +57,40 @@ width: 320px;
 
 }
 
+.todobutton {
+  background-color: rgb(247, 201, 229);
+  border: 1px solid #f08287;
+  border-radius: 5px;
+  padding: 15.65px;
+  position: relative;
+left: 1px;
+color: rgb(68, 5, 10);
+}
+
 .taskinput {
+  border: 2px solid #f08287;
+  border-radius: 5px;
+  background-color: rgb(247, 174, 219);
   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  color: rgb(43, 3, 9);
 }
 
 .delete {
-  color: #721e64;
+  color: rgb(43, 3, 9);
+}
+.icons {
+  /* border-style: solid; */
+  display: flex;
+  width: 60px;
+  font-size: 29px;
+  margin-top: 2px;
 }
 /* .to-do-row edits the text style of the tasks inputted */
 .to-do-row {
@@ -80,6 +107,8 @@ width: 320px;
 
 
 @media only screen and (max-width: 600px) {
+
+
 
   .app {
   display: flex;
