@@ -31,13 +31,7 @@ export default function Todoform(props) {
     <form onSubmit={handleSubmit}
       className='todoform'>
       {props.edit ? (<> 
-        <input placeholder='Add Comments' value={input}
-          onChange={handleChange} name='text'
-          ref={inputRef}
-        className='todo-comment'/>
-        <button onClick={handleSubmit} className='todo-comment-button'>
-          Comment
-        </button>
+        
       </>
         ):(
         <>
