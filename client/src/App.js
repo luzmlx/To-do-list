@@ -1,6 +1,7 @@
 import React from 'react'
 import './components/Todo.css'
 
+import Header from './components/Header'
 
 import TasksPage from './components/TasksPage'
 
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <div className="app">
-
+<Header />
       
       <TasksPage />
 

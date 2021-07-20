@@ -6,6 +6,19 @@ body {
     #e7d4e7 100%
   );
 }
+.header {
+  background: #c06a99;
+  color:rgb(85, 5, 25);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% ;
+border-radius: 10px;
+}
+
+
 .footer {
   background: #c06a99;
   
@@ -122,6 +135,18 @@ color: rgb(68, 5, 10);
   border-radius: 10px;
   padding-bottom: 30px;
   }
+.header {
+    background: #c06a99;
+    color:rgb(85, 5, 25);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100% ;
+  border-radius: 10px;
+  
+  
+}
+
   .footer {
   background: #c06a99;
   

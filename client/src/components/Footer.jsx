@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <footer className="footer">
-<p>Luz Lopez</p>
+<p>Designed with love by Luz Lopez :)</p>
     </footer>
   )
 }
