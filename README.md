@@ -26,36 +26,28 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 {
     "records": [
         {
-            "id": "rec5IsjtYoiCvfkzN",
+            "id": "rec26wo3u2zCrrYJD",
             "fields": {
-                "To-Do": "Cook",
-                
-                "comments": "Lasagna vs. Homemade Pizza",
-                "date": "2021-06-13"
+                "task": "Clean"
             },
-            "createdTime": "2021-07-13T03:50:19.000Z"
+            "createdTime": "2021-07-19T02:13:45.000Z"
         },
         {
-            "id": "recmuq1rnhhpPM9Z9",
+            "id": "recAOSYrxU7IgBYl5",
             "fields": {
-                "To-Do": "Homework",
-                
-                "date": "2021-07-14",
-                "comments": "Algebra hw"
+                "task": "Watch Demonslayer"
             },
-            "createdTime": "2021-07-13T03:50:19.000Z"
+            "createdTime": "2021-07-20T02:41:49.000Z"
         },
         {
-            "id": "recORjd1HeZFJnyiH",
+            "id": "recFNSzP5T5Rz1flM",
             "fields": {
-                "To-Do": "Clean",
-                "date": "2021-07-13",
-                "comments": "sweep and mop floor"
+                "task": "Homework"
             },
-            "createdTime": "2021-07-13T03:50:19.000Z"
+            "createdTime": "2021-07-20T02:57:14.000Z"
         }
     ],
-    "offset": "recORjd1HeZFJnyiH"
+    "offset": "recFNSzP5T5Rz1flM"
 }
 
 ```
@@ -83,16 +75,16 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 |July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |July 13| Project Approval | Complete
 |July 13| Core Application Structure (HTML, CSS, etc.) | Complete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
+|July 14| Pseudocode / actual code | Complete
+|July 15| Initial Clickable Model  | Complete
+|July 16| MVP | Complete
 |July 20| Presentations | Incomplete
 
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Proposal | H | 3hrs|  |  |
+| Proposal | H | 3hrs| 4hrs| 4hrs|
 | HTML code | H | 2hrs|  |  |
 | PseudoCode | H | 2hrs|  |  |
 | Component CSS Styling | H | 3hrs|  |  |
@@ -104,7 +96,7 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 | POST MVP: Functional Dark Mode Button | L | 1hr|  |  |
 | POST MVP: Darkmode CSS Styling | L | 3hrs|  |  |
 
-| Total | H | 29hrs| |  |
+| Total | H | 29hrs|  |  |
 
 ## SWOT Analysis
 
